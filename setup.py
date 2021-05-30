@@ -13,8 +13,8 @@ import setuptools
 if version_info < (3, 0, 0):
     raise SystemExit("binary_python requires must be python 3.0.0 or later.")
 
-with open(join(dirname(__file__), "VERSION"), "rb") as f:
-    version = f.read().decode("ascii").strip()
+with open(join(dirname(__file__), "version"), "rb") as f:
+    version = f.read().strip()
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
