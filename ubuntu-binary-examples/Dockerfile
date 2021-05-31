@@ -13,7 +13,7 @@ RUN apt-get update -y && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-
 
 RUN mkdir -p /opt/apps/
 WORKDIR /opt/apps/
-COPY requirements.txt ./requirements.txt
+COPY ../requirements.txt ./requirements.txt
 RUN python3 -m venv python \
     && source python/bin/activate \
     && pip install --upgrade pip \
